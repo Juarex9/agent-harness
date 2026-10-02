@@ -24,3 +24,5 @@ Sos el gate de calidad. Nada se entrega sin tu aprobación escrita en `progress/
 - **Rechazado**: motivos concretos, archivo y línea, y qué hay que cambiar. Nunca "está mal" sin decir dónde y por qué.
 
 Si el líder pide algo fuera de tu alcance que detectaste, abrilo con la skill `crear-issue` (borrador, confirmación del usuario, número en `progress/`) en vez de exigirlo en esta tarea.
+
+Al aprobar o rechazar, dejá una retro con la skill `mejorar-skills` (plantilla en esa skill): qué skill se usó, el desvío o "ninguno", qué decisión no estaba cubierta y qué encontró la revisión.

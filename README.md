@@ -18,7 +18,7 @@ Cuatro piezas, las mismas en cualquier proyecto:
 Además trae:
 
 - **Roles.** Líder, implementador, revisor y explorador. Especialistas de seguridad y testing, solo cuando la tarea lo justifica.
-- **Skills.** `write-spec` (redactar una spec), `verify-check` (correr el chequeo completo), `check-map` (rutas sensibles), `crear-issue` (abrir un issue de GitHub con confirmación) y `update-progress` (dejar la tarea escrita).
+- **Skills.** `write-spec` (redactar una spec), `verify-check` (correr el chequeo completo), `check-map` (rutas sensibles), `crear-issue` (abrir un issue de GitHub con confirmación), `mejorar-skills` (proponer ajustes en un PR draft, sin aflojar controles) y `update-progress` (dejar la tarea escrita).
 - **Plantillas de proyecto** que ya cumplen el contrato: Next.js (`template/`), Python (`template-python/`) y MERN (`template-mern/`). Cada una incluye `AGENTS.md`, `init.sh`, `progress/`, `specs/` y un workflow de CI que corre `check`.
 - **Instalador** estilo dotfiles (`install.sh`): idempotente, con `--dry-run` y backup de lo que ya exista.
 
@@ -127,7 +127,7 @@ agent-harness/
 ├── instructions/              # Flujo, estilo e instrucciones globales
 ├── agents/                    # Líder, implementador, revisor, explorador
 │   └── specialists/           # Seguridad y testing
-├── skills/                    # write-spec, verify-check, check-map, crear-issue, update-progress
+├── skills/                    # write-spec, verify-check, check-map, crear-issue, mejorar-skills, update-progress
 ├── specs/spec-template.md     # Plantilla de spec
 ├── docs/                      # orca, specs, matrix, mapa, formato de progress
 ├── template/                  # Plantilla Next.js
