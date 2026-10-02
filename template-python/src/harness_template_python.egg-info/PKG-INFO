@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: harness-template-python
+Version: 0.1.0
+Summary: Plantilla Python mínima compatible con el harness de IA
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: ruff>=0.8; extra == "dev"
+Requires-Dist: mypy>=1.13; extra == "dev"

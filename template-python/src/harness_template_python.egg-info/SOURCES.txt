@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/greet.py
+src/harness_template_python.egg-info/PKG-INFO
+src/harness_template_python.egg-info/SOURCES.txt
+src/harness_template_python.egg-info/dependency_links.txt
+src/harness_template_python.egg-info/requires.txt
+src/harness_template_python.egg-info/top_level.txt
+tests/test_greet.py

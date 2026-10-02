@@ -1,0 +1,25 @@
+{
+  "name": "harness-template-mern",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test:server": "npm run test --workspace=server",
+    "test:client": "npm run test --workspace=client",
+    "build:client": "npm run build --workspace=client",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run test:server && npm run test:client && npm run build:client && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.49.1",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.12.0"
+  }
+}
