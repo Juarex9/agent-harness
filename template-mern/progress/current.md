@@ -2,6 +2,7 @@
 
 - Estado: en-curso
 - Spec: N/A — todavía no hay tarea
+- Issue: N/A — todavía no hay tarea
 - Criterios de aceptación:
   - [ ] (los define la primera tarea real)
 - Plan:

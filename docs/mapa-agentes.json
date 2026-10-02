@@ -1,0 +1,6 @@
+{
+  "_ayuda": "Rutas que el agente no cambia sin consultar. Formato: docs/mapa.md.",
+  "sensibles": [
+    {"tipo": "secretos", "rutas": [".env", ".env.local"]}
+  ]
+}

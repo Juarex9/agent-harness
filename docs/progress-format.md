@@ -11,6 +11,7 @@ Refleja siempre lo último. Esqueleto:
 
 - Estado: en-curso | bloqueado | listo-para-revisar | terminado
 - Spec: specs/<feature>.md (Estado: aprobada) | N/A — trivial: <motivo en 1 línea>
+- Issue: #n | N/A — <motivo en 1 línea>
 - Criterios de aceptación:
   - [ ] <criterio verificable>
 - Plan:
@@ -30,6 +31,7 @@ Un archivo por hito cerrado: `history/YYYY-MM-DD-<tema>.md`. Es un snapshot de `
 
 - Todo lo importante va al archivo, no queda en el contexto del agente.
 - La tarea apunta a su spec (o justifica por qué es trivial; el revisor lo valida).
+- La tarea apunta a su issue de GitHub (`Issue: #n`) o justifica `N/A`. Un hallazgo fuera de alcance se abre con la skill `crear-issue`, no queda solo como frase.
 - El veredicto del revisor (aprobado/rechazado con motivos) queda en `current.md`.
 
 ## Continuidad (merge, no overwrite)

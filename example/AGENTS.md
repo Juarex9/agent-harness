@@ -20,6 +20,7 @@ Next.js 15 + React 19 + TypeScript. Tests unitarios con Vitest (`tests/`), e2e c
 - Toda feature o cambio lleva tests de comportamiento real.
 - No marcar nada como terminado sin `check` en verde + aprobación escrita del revisor en `progress/`.
 - No tocar secretos, `.env`, ni hacer push o deploy sin que lo pidan.
+- Rutas sensibles en `docs/mapa-agentes.json`. El revisor corre la skill `check-map` antes de aprobar.
 - Si un comportamiento cambia, actualizar su spec en el mismo cambio.
 
 ## Particularidades

@@ -14,6 +14,7 @@ Instrucciones para cualquier agente que trabaje en este repo.
 - Si una herramienta no soporta lo que se pide, frená y preguntá en vez de improvisar.
 - Si cambiás comportamiento (flujo, formato, contrato), actualizá el doc correspondiente en el mismo cambio.
 - Nada de secretos en el repo. No commitees, pushees ni deployees sin que te lo pidan.
+- Rutas sensibles: `docs/mapa-agentes.json`. El revisor corre `python3 skills/check-map/check_map.py`.
 - Respondé en español y explicá el porqué de cada decisión.
 
 ## Definición de terminado

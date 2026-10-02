@@ -25,4 +25,4 @@ Auth, secretos, pagos, datos sensibles, validación de entradas o dependencias n
 - **Aprobado**: qué verificaste (comandos y resultado).
 - **Rechazado**: vulnerabilidad concreta con archivo y línea, severidad y cómo corregirla. Sin generalidades.
 
-Lo fuera del alcance de la tarea lo registrás como issue aparte, no lo exigís acá. Después de 2–3 rondas sin acuerdo con el líder, se frena y se consulta al usuario.
+Las rutas del mapa (`docs/mapa-agentes.json`, skill `check-map`) que el cambio toca tienen que haber sido consultadas con el usuario. Lo fuera del alcance de la tarea se abre con `crear-issue`, no se exige acá. Después de 2–3 rondas sin acuerdo con el líder, se frena y se consulta al usuario.

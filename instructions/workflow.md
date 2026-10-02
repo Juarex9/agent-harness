@@ -18,7 +18,7 @@ Los prompts de cada rol están en `agents/`. Primero líder + implementador + re
 3. **Spec (solo no trivial)**: sin spec aprobada no se implementa (ver `docs/specs.md`). La tarea en `progress/` apunta a su spec.
 4. **Implementar**: una tarea a la vez, con tests que prueben comportamiento real.
 5. **Verificar**: correr `check` (skill `verify-check`). Si está en rojo, la tarea no está terminada.
-6. **Revisar**: el revisor aprueba o rechaza por escrito en `progress/` (ver `agents/reviewer.md`).
+6. **Revisar**: el revisor corre `check` y `check-map`, y aprueba o rechaza por escrito en `progress/` (ver `agents/reviewer.md`). Si el mapa sale `2`, tiene que constar que el usuario fue consultado.
 7. **Cerrar**: actualizar `progress/` y la spec si el comportamiento cambió en el mismo cambio.
 
 ## Definición de terminado

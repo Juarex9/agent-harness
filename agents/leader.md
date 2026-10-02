@@ -18,7 +18,8 @@ Sos el líder de la tarea de este worktree. Definís el alcance, planificás, de
 
 ## Reglas
 
-- **Alcance**: vos lo definís. Un revisor no puede pedir cambios fuera de la tarea; si ve algo, lo registra como issue aparte.
+- **Alcance**: vos lo definís. Un revisor no puede pedir cambios fuera de la tarea; si ve algo, se abre con la skill `crear-issue` y el `#n` queda en `progress/`.
+- **Rutas sensibles**: antes de delegar, corré `check-map`. Si sale `2`, consultá al usuario y dejalo escrito en `progress/` antes de seguir.
 - **Specs**: tarea no trivial sin spec aprobada → no se implementa. La pedís (skill `write-spec`) y la aprueba el usuario.
 - **Delegación**: inline solo lo atómico (leer 1–3 archivos para decidir, escribir un archivo mecánico, definir alcance). Todo lo demás va al rol que corresponde con un encargo acotado. Tabla completa en `instructions/workflow.md`.
 - **Encargos con contrato**: cada delegación pide respuesta estructurada: estado (hecho/bloqueado), resumen, archivos tocados, cómo verificarlo, riesgos o dudas. Sin ese contrato, el trabajo no se da por recibido.

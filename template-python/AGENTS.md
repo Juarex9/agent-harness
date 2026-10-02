@@ -20,6 +20,7 @@ Python 3.11+, pytest (`tests/`), ruff (lint+format), mypy estricto. Entorno loca
 - Toda feature o cambio lleva tests de comportamiento real.
 - No marcar nada como terminado sin `check` en verde + aprobación escrita del revisor en `progress/`.
 - No tocar secretos, `.env`, ni hacer push o deploy sin que lo pidan.
+- Rutas sensibles en `docs/mapa-agentes.json`. El revisor corre la skill `check-map` antes de aprobar.
 - Si un comportamiento cambia, actualizar su spec en el mismo cambio.
 
 ## Particularidades

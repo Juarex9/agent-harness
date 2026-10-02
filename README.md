@@ -18,7 +18,7 @@ Cuatro piezas, las mismas en cualquier proyecto:
 Además trae:
 
 - **Roles.** Líder, implementador, revisor y explorador. Especialistas de seguridad y testing, solo cuando la tarea lo justifica.
-- **Skills.** `write-spec` (redactar una spec), `verify-check` (correr el chequeo completo) y `update-progress` (dejar la tarea escrita).
+- **Skills.** `write-spec` (redactar una spec), `verify-check` (correr el chequeo completo), `check-map` (rutas sensibles), `crear-issue` (abrir un issue de GitHub con confirmación) y `update-progress` (dejar la tarea escrita).
 - **Plantillas de proyecto** que ya cumplen el contrato: Next.js (`template/`), Python (`template-python/`) y MERN (`template-mern/`). Cada una incluye `AGENTS.md`, `init.sh`, `progress/`, `specs/` y un workflow de CI que corre `check`.
 - **Instalador** estilo dotfiles (`install.sh`): idempotente, con `--dry-run` y backup de lo que ya exista.
 
@@ -107,6 +107,7 @@ Todo proyecto del harness cumple esto:
 | `init.sh` | Deja el entorno listo o explica qué falta |
 | `progress/` | Sigue `docs/progress-format.md`. `current.md` es lo último; `history/` guarda hitos |
 | `specs/` | Una spec por feature no trivial, actualizada en el mismo cambio (`docs/specs.md`) |
+| `docs/mapa-agentes.json` | Rutas sensibles. El revisor corre `check-map` (`docs/mapa.md`) |
 | Engram | Decisiones y specs indexadas. Los archivos mandan; engram recupera |
 
 Las tres plantillas ya traen ese esqueleto y un ejemplo mínimo para copiar como base de un proyecto nuevo.
@@ -126,9 +127,9 @@ agent-harness/
 ├── instructions/              # Flujo, estilo e instrucciones globales
 ├── agents/                    # Líder, implementador, revisor, explorador
 │   └── specialists/           # Seguridad y testing
-├── skills/                    # write-spec, verify-check, update-progress
+├── skills/                    # write-spec, verify-check, check-map, crear-issue, update-progress
 ├── specs/spec-template.md     # Plantilla de spec
-├── docs/                      # orca, specs, matrix, formato de progress
+├── docs/                      # orca, specs, matrix, mapa, formato de progress
 ├── template/                  # Plantilla Next.js
 ├── template-python/           # Plantilla Python
 ├── template-mern/             # Plantilla MERN
@@ -191,6 +192,7 @@ En Orca queda, documentado en `docs/orca.md`:
 | Cómo escribo y qué no se toca | `instructions/style.md`, `instructions/global.md` |
 | Cuándo hace falta spec y quién la aprueba | `docs/specs.md` |
 | El formato de `progress/` | `docs/progress-format.md` |
+| Qué archivos no se tocan sin preguntar | `docs/mapa.md` |
 | Cuándo activar especialistas | `docs/matrix.md` |
 | Qué configurar en Orca | `docs/orca.md` |
 | Copiar un proyecto nuevo | el `README.md` de `template/`, `template-python/` o `template-mern/` |

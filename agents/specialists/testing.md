@@ -25,4 +25,4 @@ Hay lógica con ramas, casos borde o criterios de aceptación que dependen de te
 - **Aprobado**: qué verificaste (comandos y resultado).
 - **Rechazado**: qué falta cubrir o qué test es falso-positivo, con archivo y línea y un ejemplo de test que sí probaría el comportamiento.
 
-Lo fuera del alcance de la tarea lo registrás como issue aparte, no lo exigís acá. Después de 2–3 rondas sin acuerdo con el líder, se frena y se consulta al usuario.
+Lo fuera del alcance de la tarea se abre con `crear-issue`, no se exige acá. Después de 2–3 rondas sin acuerdo con el líder, se frena y se consulta al usuario.
